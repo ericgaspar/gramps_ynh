@@ -7,9 +7,9 @@ name = "Gramps"
 description.en = "Explain in *a few (10~15) words* the purpose of the app or what it actually does (it is meant to give a rough idea to users browsing a catalog of 100+ apps)"
 description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
 
-version = "1.0~ynh1"
+version = "23.12.0~ynh1"
 
-maintainers = ["johndoe"]
+maintainers = ["eric_G"]
 
 [upstream]
 # NB: Only the "license" key is mandatory. Remove entries for which there's no relevant data
@@ -37,14 +37,7 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
-    type = "path"
-    default = "/example"
-
     [install.init_main_permission]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
-    # This won't be saved as setting and will instead be used to initialize the SSOwat permission
     type = "group"
     default = "visitors"
 
@@ -56,12 +49,9 @@ ram.runtime = "50M"
     default = "fr"
 
     [install.admin]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
     type = "user"
 
     [install.password]
-    # this is a generic question - ask strings are automatically handled by YunoHost's core
-    # Note that user-provided passwords questions are not automatically saved as setting
     help.en = "Use the help field to add an information for the admin about this question."
     help.fr = "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
     type = "password"
@@ -71,8 +61,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/foo/bar/archive/refs/tags/v1.2.3.tar.gz"
-        sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+        url = "https://github.com/gramps-project/Gramps.js/releases/download/v23.12.0/grampsjs-v23.12.0.tar.gz"
+        sha256 = "614550871de21fe344585e1576aea6004b763b12d429f7c69940022dc4716768"
 
         autoupdate.strategy = "latest_github_tag"
 
