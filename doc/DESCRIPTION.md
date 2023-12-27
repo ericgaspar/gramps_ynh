@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+Gramps.js is the responsive Javascript frontend of Gramps Web, a modern web app that allows to browse and collaboratively edit a genealogical database, based on and interoperable with the Gramps desktop application. See Gramps Web API for the Python backend repository.
